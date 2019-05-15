@@ -9,8 +9,11 @@ turn the heat up and down automatically at night and in the morning.
 Knob turner with serial interface.
 
 ## Components
+```
 1x ESP8266 brainbox
 1x DC motor driver to drive the engine
 1x INA219 breakout board, to measure the current going through the engine
 2x SHT31 breakout board, to measure ambient and heater temperature
 2x Banana binding posts and plugs to connect the engine to the box
+1x SSD1306 oled screen to show the heater and ambient temperature
+```
