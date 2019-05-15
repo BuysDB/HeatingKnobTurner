@@ -8,6 +8,11 @@ turn the heat up and down automatically at night and in the morning.
 ## Features:
 Knob turner with serial interface.
 
+![Turner assembly](http://buysdb.nl/projects/knobturner/assembly_knob.jpg)
+![box](http://buysdb.nl/projects/knobturner/box.jpg)
+![Knob grabber](http://buysdb.nl/projects/knobturner/grabber.jpg)
+
+
 ## Components
 ```
 1x ESP8266 brainbox
@@ -16,6 +21,7 @@ Knob turner with serial interface.
 2x SHT31 breakout board, to measure ambient and heater temperature
 2x Banana binding posts and plugs to connect the engine to the box
 1x SSD1306 oled screen to show the heater and ambient temperature
+1x SG960 servo (modified)
 ```
 
 ## Usage
@@ -43,3 +49,5 @@ knobTurner = heatingknobturner.HeatingKnobTurner(ser)
 knobTurner.tick()
 knobTurner.setTemp(21) # The knob turner will try to get the room to 21 degrees
 ```
+
+## Servo modification
