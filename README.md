@@ -17,3 +17,29 @@ Knob turner with serial interface.
 2x Banana binding posts and plugs to connect the engine to the box
 1x SSD1306 oled screen to show the heater and ambient temperature
 ```
+
+## Usage
+
+Raw serial commands:
+```
+Example:
+1000,1,1000,5,500.0,2006\n
+
+power : Value between 0 and 1023, how much do we trottle the turner
+timeout  : how long do we turn
+current Limiter Amount : how many times are we allowed to exceed the current limit
+current limit : current limit in mA
+checksum (Sum of all values)
+```
+
+Usage of the Python class which interfaces using the serial connection
+```
+import heatingknobturner
+import serial
+# Connect to the heating knob turner:
+ser = serial.Serial('/dev/ttyUSB1',115200)
+# Initialise the heatingknobturner object:
+knobTurner = heatingknobturner.HeatingKnobTurner(ser)
+knobTurner.tick()
+knobTurner.setTemp(21) # The knob turner will try to get the room to 21 degrees
+```
