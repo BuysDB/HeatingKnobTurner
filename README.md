@@ -8,10 +8,9 @@ turn the heat up and down automatically at night and in the morning.
 ## Features:
 Knob turner with serial interface.
 
-![Turner assembly](http://buysdb.nl/projects/knobturner/assembly_knob.jpg | width=100)
-![box](http://buysdb.nl/projects/knobturner/box.jpg | width=100)
-![Knob grabber](http://buysdb.nl/projects/knobturner/grabber.jpg | width=100)
-
+<img alt="Turner assembly" src="http://buysdb.nl/projects/knobturner/assembly_knob.jpg" width="456" height="257">
+<img alt="Box" src="http://buysdb.nl/projects/knobturner/box.jpg" width="456" height="257">
+<img alt="Knob grabber" src="http://buysdb.nl/projects/knobturner/grabber.jpg" width="456" height="257">
 
 ## Components
 ```
