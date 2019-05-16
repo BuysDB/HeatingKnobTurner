@@ -30,7 +30,7 @@ Raw serial commands:
 Example:
 1000,1,1000,5,500.0,2006\n
 
-power : Value between 0 and 1023, how much do we trottle the turner
+power : Value between 0 and 1023, how much do we throttle the turner
 timeout  : how long do we turn
 current Limiter Amount : how many times are we allowed to exceed the current limit
 current limit : current limit in mA
@@ -50,3 +50,6 @@ knobTurner.setTemp(21) # The knob turner will try to get the room to 21 degrees
 ```
 
 ## Servo modification
+I bought the SG960 because it is supposed to be strong, however the controller is very power hungry for no apparent reason.
+My solution was to completely remove the controller and connect the DC motor to a DC motor driver.
+The drawback of this solution is that there is no good positional feedback. If you are planning to build something like this I would highly recommend a stepper motor. 
