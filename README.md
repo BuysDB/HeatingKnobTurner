@@ -52,4 +52,4 @@ knobTurner.setTemp(21) # The knob turner will try to get the room to 21 degrees
 ## Servo modification
 I bought the SG960 because it is supposed to be strong, however the controller is very power hungry for no apparent reason.
 My solution was to completely remove the controller and connect the DC motor to a DC motor driver.
-The drawback of this solution is that there is no good positional feedback. If you are planning to build something like this I would highly recommend a stepper motor. 
+The drawback of this solution is that there is no proper positional feedback. If you are planning to build something like this I would highly recommend using a stepper motor.
